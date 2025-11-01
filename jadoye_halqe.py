@@ -1,13 +1,10 @@
 n = int(input())
 x = int(input())
-counter = 0
 
-while counter != n :
-    if x%2 == 1 :
-        x = (x*2)-1
-    elif x%2 == 0 :
-        x = x/2
-    counter += 1
+for i in range (n) :
+    if x%2 == 1 : 
+        x = (x*2) - 1 
+    else : 
+        x = x/2    
 
-
-print(f"{x:0.0f}")
+print (f"{x:0.0f}")
